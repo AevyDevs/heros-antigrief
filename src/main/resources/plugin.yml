@@ -1,0 +1,11 @@
+name: AntiGrief
+version: Alpha-RC-1
+author: Gud
+main: net.herospvp.antigrief.Main
+load: POSTWORLD
+depend:
+  - HerosCore
+commands:
+  pin:
+  antigrief:
+    aliases: [ag]

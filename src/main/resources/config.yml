@@ -1,0 +1,35 @@
+mysql:
+  table: antigrief
+language:
+  antigrief-pin-1:
+    ita: "Sei stato autenticato."
+    eng: "You've been authenticated."
+  antigrief-pin-2:
+    ita: "Pin errato."
+    eng: "Wrong pin."
+  antigrief-pin-3:
+    ita: "Devi specificare piu' argomenti, ecco la lista dei comandi:"
+    eng: "You must specify more arguments, here is the list of commands:"
+  antigrief-pin-4:
+    ita: "Non sei nella lista degli admin, unlucky."
+    eng: "You're not in the admin list, unlucky."
+  antigrief-pin-5:
+    ita: "Sei gia' autenticato."
+    eng: "Your're already authenticated."
+  antigrief-event-1:
+    ita: "&cLa parole del Prof. Oak rimbombano: C'è un luogo e un momento per ogni cosa! Ma non ora."
+    eng: "&cOak's words echoed... There's a time and place for everything, but not now."
+  antigrief-ag-1:
+    ita: "Non esistono records di "
+    eng: "There are no records of "
+  antigrief-ag-2:
+    ita:
+      - "&cNome: &7"
+      - "&cPin: &7"
+      - "&cRank: &7"
+      - "&cIP: &7"
+    eng:
+      - "&cName: &7"
+      - "&cPin: &7"
+      - "&cRank: &7"
+      - "&cIP: &7"
