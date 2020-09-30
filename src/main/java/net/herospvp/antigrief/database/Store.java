@@ -3,7 +3,7 @@ package net.herospvp.antigrief.database;
 import lombok.Getter;
 import net.herospvp.antigrief.Conf;
 import net.herospvp.antigrief.Main;
-import net.herospvp.antigrief.Utils;
+import net.herospvp.antigrief.utils.Utils;
 import org.bukkit.Bukkit;
 
 import java.util.ArrayList;

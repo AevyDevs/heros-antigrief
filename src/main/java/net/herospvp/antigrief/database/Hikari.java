@@ -2,7 +2,7 @@ package net.herospvp.antigrief.database;
 
 import net.herospvp.antigrief.Conf;
 import net.herospvp.antigrief.Main;
-import net.herospvp.antigrief.Utils;
+import net.herospvp.antigrief.utils.Utils;
 import net.herospvp.heroscore.HerosCore;
 import net.herospvp.heroscore.utils.builders.Message;
 import org.bukkit.command.CommandSender;

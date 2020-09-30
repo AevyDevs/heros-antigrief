@@ -1,5 +1,6 @@
-package net.herospvp.antigrief;
+package net.herospvp.antigrief.utils;
 
+import net.herospvp.antigrief.Main;
 import net.herospvp.antigrief.database.Store;
 import net.herospvp.heroscore.objects.CorePlayer;
 import net.herospvp.heroscore.utils.builders.Message;

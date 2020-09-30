@@ -1,5 +1,7 @@
-package net.herospvp.antigrief;
+package net.herospvp.antigrief.monitor;
 
+import net.herospvp.antigrief.Main;
+import net.herospvp.antigrief.utils.Utils;
 import net.herospvp.antigrief.database.Store;
 import net.herospvp.heroscore.objects.CorePlayer;
 import net.herospvp.heroscore.utils.TelegramRequest;
@@ -14,6 +16,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Events implements Listener {
 
@@ -33,7 +36,7 @@ public class Events implements Listener {
     }
 
     private static final List<String> blacklistedCommands = Arrays.asList(
-            "//", "//calc", "/sp", "/superpickaxe", "//sp", "//superpickaxe", "//calc", "//calculate", "/worldedit:/calc", "/worldedit:/calculate"
+            "//", "/sp", "/superpickaxe", "//sp", "//superpickaxe"
     );
 
     private static final List<String> otherBlacklistedCommands = Arrays.asList(
@@ -59,12 +62,17 @@ public class Events implements Listener {
         }
         if (command.length() >= 1) {
             String[] split = command.toLowerCase().split(" ");
+            AtomicInteger integer = new AtomicInteger(0);
             blacklistedCommands.forEach(s -> {
                 if (split[0].equals(s)) {
+                    integer.getAndIncrement();
                     event.setCancelled(true);
                     builder.sendMessage(player, CorePlayer.of(player, Main.getInstance()).getStringTranslated("antigrief-event-1"));
                 }
             });
+
+            if (integer.get() == 1) return;
+
             otherBlacklistedCommands.forEach(s -> {
                 if (command.toLowerCase().equals(s)) {
                     event.setCancelled(true);

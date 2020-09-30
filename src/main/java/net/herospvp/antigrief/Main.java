@@ -4,6 +4,7 @@ import lombok.Getter;
 import net.herospvp.antigrief.commands.AntiGrief;
 import net.herospvp.antigrief.commands.Pin;
 import net.herospvp.antigrief.database.Hikari;
+import net.herospvp.antigrief.monitor.Events;
 import net.herospvp.heroscore.utils.builders.Message;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

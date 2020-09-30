@@ -1,7 +1,7 @@
 package net.herospvp.antigrief.commands;
 
 import net.herospvp.antigrief.Main;
-import net.herospvp.antigrief.Utils;
+import net.herospvp.antigrief.utils.Utils;
 import net.herospvp.antigrief.database.Store;
 import net.herospvp.heroscore.utils.TelegramRequest;
 import net.herospvp.heroscore.utils.builders.Message;
